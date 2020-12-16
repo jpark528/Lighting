@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>World</title>
+
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+        </canvas>
+
+        <p>
+        Angle
+    <input type="range" min="0" max="360" value="0" class="slider" 
+      id="angleSlide">
+      <p>
+        headAngle<input type="range" min="-15" max="15" value="0" class="slider" 
+      id="headSlide">
+              neckAngle<input type="range" min="-7" max="10" value="0" class="slider" 
+      id="neckSlide">
+
+		<p>
+		light X <input type ="range" min ="-250" max ="250" value ="0" class ="slider" id ="lightSlideX">
+		light Y <input type ="range" min ="-250" max ="250" value ="100" class ="slider" id ="lightSlideY">
+		light Z <input type ="range" min ="-250" max ="250" value ="-200" class ="slider" id ="lightSlideZ">
+		</p>
+				<p>
+		spotlight X <input type ="range" min ="-250" max ="250" value ="0" class ="slider" id ="lightSpotX">
+		spotlight Y <input type ="range" min ="-250" max ="250" value ="100" class ="slider" id ="lightSpotY">
+		spotlight Z <input type ="range" min ="-250" max ="250" value ="-200" class ="slider" id ="lightSpotZ">
+		</p>
+		<p>
+      <button type="button" id="onOrOff">animation on/off</button> 
+      </p>
+      <p>
+            <button type='button' id='normalOn'>normalOn</button>
+      <button type='button' id='normalOff'>normalOff</button>
+      <p>
+    <button type='button' id='lightOn'>lightOn</button>
+      <button type='button' id='lightOff'>lightOff</button>
+      <p>
+
+      <p>
+    <button type='button' id='spotOn'>spotOn</button>
+      <button type='button' id='spotOff'>spotOff</button>
+      <p>
+
+
+        <script src="asg4.js"></script>
+
+        <script src="Camera.js"></script>
+        <script src="Cube.js"></script>
+        <script src="triangle.js"></script>
+ 		<script src="sphere.js"></script>
+        <script src="libs/cuon-matrix-cse160.js"></script>
+        <script src="libs/cuon-utils.js"></script>
+        <script src="libs/webgl-utils.js"></script>
+        <script src="libs/webgl-debug.js"></script>
+        
+    </body>
+</html> 
